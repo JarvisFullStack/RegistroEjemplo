@@ -66,6 +66,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Consultas\ConsultaPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Consultas\ConsultaPersonas.Designer.cs">
+      <DependentUpon>ConsultaPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\RegistroPersonas.Designer.cs">
+      <DependentUpon>RegistroPersonas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +90,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Consultas\ConsultaPersonas.resx">
+      <DependentUpon>ConsultaPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\RegistroPersonas.resx">
+      <DependentUpon>RegistroPersonas.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -95,8 +113,6 @@
   <ItemGroup>
     <Folder Include="DAL\Scripts\" />
     <Folder Include="Resources\" />
-    <Folder Include="UI\Consultas\" />
-    <Folder Include="UI\Registros\" />
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
